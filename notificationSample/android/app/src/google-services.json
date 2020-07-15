@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "91098455125",
+    "firebase_url": "https://powerexpertmobile-b4e25.firebaseio.com",
+    "project_id": "powerexpertmobile-b4e25",
+    "storage_bucket": "powerexpertmobile-b4e25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91098455125:android:f7dee320691ae9d939c8dc",
+        "android_client_info": {
+          "package_name": "com.notificationsample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91098455125-8e5c4nqsf2de87b2o26j541lejeksq5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz0bdW3xDPnG7_bVkG1eaYNI21lKiQyLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91098455125-8e5c4nqsf2de87b2o26j541lejeksq5t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "91098455125-5vnk2snf1klcm8fhl1gpdoviuedjn038.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.powerxpertmobile"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91098455125:android:2fffdf3c3befa1c2",
+        "android_client_info": {
+          "package_name": "com.powerxpertmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91098455125-pb874lqdd00b7cur3ao1285f0so8g1lv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.powerxpertmobile",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "91098455125-63nef7jqtbsic2pk9pmofo2ro875891c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.powerxpertmobile",
+            "certificate_hash": "41a7760163d4ce36a7bce33ac10530cb2a88f4cb"
+          }
+        },
+        {
+          "client_id": "91098455125-8e5c4nqsf2de87b2o26j541lejeksq5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz0bdW3xDPnG7_bVkG1eaYNI21lKiQyLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91098455125-8e5c4nqsf2de87b2o26j541lejeksq5t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "91098455125-5vnk2snf1klcm8fhl1gpdoviuedjn038.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.powerxpertmobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

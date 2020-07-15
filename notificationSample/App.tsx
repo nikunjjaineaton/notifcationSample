@@ -7,6 +7,7 @@ import {CustomLoader} from './custom-loader'
 import {HttpRequest} from './http-request'
 import {  TouchableOpacity,Clipboard } from 'react-native';
 import NotifService from './NotifService';
+import PushNotification from 'react-native-push-notification';
 
 var udid = ''
 import {
@@ -34,6 +35,7 @@ interface AppProps { }
 
 class App extends React.Component<Props,State> {
   //notificationEngObj: NotificationEngine
+  
 
   constructor(props: any) {
     super(props)
@@ -47,7 +49,8 @@ class App extends React.Component<Props,State> {
           alert("Token copied to clipboard"+ token)
       }.bind(this),
       function (notification) {
-        alert(notification.data.aps.alert)
+        console.log("notification received",notification)
+        alert("got into notifcation")
        // alert("configur"+notification.message)
        
       }.bind(this),
@@ -63,6 +66,10 @@ class App extends React.Component<Props,State> {
   }
 
   componentWillMount(){
+    PushNotification.popInitialNotification((callback)=>{
+      alert("i got in")
+      console.log("ress from android ---2 ", callback.userInfo)
+    })
     const { notifcationOption } = this.props
     if(notifcationOption)
     {
@@ -209,7 +216,7 @@ private  async getTokenJSON(){
     alert(`Device token updated.`)
   }
   componentDidMount() {
-    console.disableYellowBox = true;
+   // console.disableYellowBox = true;
     //this.notificationEngObj = NotificationEngine.getInstance(this)
     // if (Platform.OS === 'android'){
     //     PushNotificationEmitter = new NativeEventEmitter(NotificationHubAndroid);

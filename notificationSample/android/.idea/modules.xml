@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/android.iml" filepath="$PROJECT_DIR$/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="notificationSample/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/notificationSample.iml" filepath="$PROJECT_DIR$/.idea/modules/notificationSample.iml" group="notificationSample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1455380416/react-native-push-notification.iml" filepath="$PROJECT_DIR$/.idea/modules/1455380416/react-native-push-notification.iml" group="notificationSample/react-native-push-notification" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/151555459/react-native-sensitive-info.iml" filepath="$PROJECT_DIR$/.idea/modules/151555459/react-native-sensitive-info.iml" group="notificationSample/react-native-sensitive-info" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/82298510/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/82298510/react-native-vector-icons.iml" group="notificationSample/react-native-vector-icons" />
     </modules>
   </component>
 </project>

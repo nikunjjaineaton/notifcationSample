@@ -1,5 +1,6 @@
 
 apply plugin: 'com.android.application'
+//apply from: "../../node_modules/react-native/react.gradle"
 
 import com.android.build.OutputFile
 
@@ -79,7 +80,10 @@ import com.android.build.OutputFile
  */
 
 project.ext.react = [
+        entryFile: "index.js",
+       // jsBundleDirRelease: "$buildDir/intermediates/merged_assets/release/mergeReleaseAssets/out",
     enableHermes: false,  // clean and rebuild if changing
+
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -192,8 +196,10 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
-
+    implementation project(':react-native-push-notification')
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+    implementation 'com.google.firebase:firebase-analytics:17.3.0'
+    implementation 'com.google.firebase:firebase-messaging:20.2.3'
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
       exclude group:'com.facebook.fbjni'
@@ -222,5 +228,5 @@ task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
 }
-
+apply plugin: 'com.google.gms.google-services'
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
